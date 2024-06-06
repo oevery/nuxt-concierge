@@ -1,12 +1,12 @@
 import { defineCron } from "#concierge-handlers";
 
 export default defineCron(
-  "PingServer",
+  "PingServer2",
   async () => {
     console.log("Ping!");
-    return "Pong";
+    return "Pong2";
   },
   {
-    every: 1000 * 30, // 30 seconds
+    every: 1000 * 60, // 1 minute
   }
 );

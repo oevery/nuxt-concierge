@@ -52,13 +52,13 @@ const cronWorkerProcessor = async (job) => {
 
   const cronJob = getCronJob(name);
 
-  return await cronJob.processor(job);  
+  return await cronJob.processor(job);
 }
 
 export default defineNitroPlugin(async (nitroApp) => {
     const logger = consola.create({}).withTag("${moduleName}")
     const { workers, createQueue, createWorker, addCronJob } = $useConcierge();
-    
+
     // CRON Queue
     const cronQueue = createQueue("CRON");
 
@@ -67,24 +67,24 @@ export default defineNitroPlugin(async (nitroApp) => {
 
     createWorker("CRON", cronWorkerProcessor)
 
-    // Add CRON Jobs      
+    // Add CRON Jobs
     ${methodFactory(cron, "addCronJob", "cron", [
       "name",
       "processor",
       "schedule",
-    ])}            
-    
+    ])}
+
     ${cron.map((_cron, i) => {
       return `
     cronQueue.add(cron${i}.name, { name: cron${i}.name }, {
-      repeat: cron${0}.schedule
+      repeat: cron${i}.schedule
     })
       `;
     })}
 
     // Queues
     ${methodFactory(queues, "createQueue", "queue", ["name", "opts"])}
-    
+
     // Simple Queues
     ${adhocQueues.map((queue) => `createQueue("${queue}");`).join("\n\t\t")}
 
@@ -93,8 +93,8 @@ export default defineNitroPlugin(async (nitroApp) => {
       "name",
       "processor",
       "opts",
-    ])}       
-    
+    ])}
+
     nitroApp.hooks.hookOnce("close", async () => {
       logger.info("Stopping " + workers.length + " workers");
 
