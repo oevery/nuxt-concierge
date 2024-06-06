@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/oevery/nuxt-concierge/compare/v1.0.60...v1.1.0)
+
+### 🩹 Fixes
+
+- Use the same environment variables name in dev & production ([f2dc89b](https://github.com/oevery/nuxt-concierge/commit/f2dc89b))
+- Cron job repeat error ([1741b15](https://github.com/oevery/nuxt-concierge/commit/1741b15))
+
+### 🏡 Chore
+
+- **release:** V1.0.60 ([9bfa966](https://github.com/oevery/nuxt-concierge/commit/9bfa966))
+- Update package.json dependencies and tsconfig.json exclude list ([842be68](https://github.com/oevery/nuxt-concierge/commit/842be68))
+- Fix typo in import statement ([945ba62](https://github.com/oevery/nuxt-concierge/commit/945ba62))
+- Update readme ([8e33f7d](https://github.com/oevery/nuxt-concierge/commit/8e33f7d))
+- Update eslint dependency to version 8 ([dde76d2](https://github.com/oevery/nuxt-concierge/commit/dde76d2))
+
+### ❤️ Contributors
+
+- Oevery ([@oevery](http://github.com/oevery))
+- Eugen Istoc <eugenistoc@gmail.com>
+
 ## v1.0.60
 
 [compare changes](https://github.com/genu/nuxt-concierge/compare/v1.0.59...v1.0.60)

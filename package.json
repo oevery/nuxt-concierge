@@ -1,9 +1,13 @@
 {
   "name": "@oevery/nuxt-concierge",
-  "version": "1.0.60",
+  "version": "1.1.0",
   "description": "Task queue for Nuxt.js",
   "repository": "https://github.com/oevery/nuxt-concierge",
-  "author": {"name": "oevery", "email": "i@oevery.me", "url": "https://github.com/oevery"},
+  "author": {
+    "name": "oevery",
+    "email": "i@oevery.me",
+    "url": "https://github.com/oevery"
+  },
   "license": "MIT",
   "type": "module",
   "configKey": "concierge",
