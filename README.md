@@ -1,5 +1,9 @@
 # nuxt-concierge
 
+**This work is fork from [genu/nuxt-concierge](https://github.com/genu/nuxt-concierge)**
+
+fix some bugs and add more feature.
+
 Queues, workers and background jobs for nuxt
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
@@ -19,20 +23,20 @@ Queues, workers and background jobs for nuxt
 
 ```bash
 # Using pnpm
-pnpm add -D nuxt-concierge
+pnpm add -D @oevery/nuxt-concierge
 
 # Using yarn
-yarn add --dev nuxt-concierge
+yarn add --dev @oevery/nuxt-concierge
 
 # Using npm
-npm install --save-dev nuxt-concierge
+npm install --save-dev @oevery/nuxt-concierge
 ```
 
-2. Add `nuxt-concierge` to the `modules` section of `nuxt.config.ts`
+2. Add `@oevery/nuxt-concierge` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
-  modules: ["nuxt-concierge"],
+  modules: ["@oevery/nuxt-concierge"],
   concierge: {
     redis: {
       host: "localhost",
