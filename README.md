@@ -1,10 +1,5 @@
 # nuxt-concierge
 
-[![npm version](https://badge.fury.io/js/nuxt-concierge.svg)](https://www.npmjs.com/package/nuxt-concierge)
-[![npm downloads](https://img.shields.io/npm/dm/nuxt-concierge.svg)](https://www.npmjs.com/package/nuxt-concierge)
-[![License](https://img.shields.io/npm/l/nuxt-concierge.svg)](https://github.com/your-org/nuxt-concierge/blob/main/LICENSE)
-[![Nuxt](https://img.shields.io/badge/nuxt.js-v2.14.12-04C690.svg)](https://nuxtjs.org/)
-
 Queues, workers and background jobs for nuxt
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
@@ -51,13 +46,12 @@ export default defineNuxtConfig({
 Use the `redis` option to configure the redis connection, or use the `redis` environment variables:
 
 ```bash
-
-NUXT_REDIS_HOST='localhost'
-NUXT_REDIS_PORT=6379
-NUXT_REDIS_PASSWORD=''
+NUXT_CONCIERGE_REDIS_HOST='localhost'
+NUXT_CONCIERGE_REDIS_PORT=6379
+NUXT_CONCIERGE_REDIS_PASSWORD=''
 ```
 
-**Note**: A redis connetion **is required** for this module to work.
+**Note**: A redis connection **is required** for this module to work.
 
 ## Usage
 
@@ -221,14 +215,3 @@ pnpm test:watch
 # Release new version
 pnpm release
 ```
-
-<!-- Badges -->
-
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/my-module
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/my-module
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/my-module
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
-[nuxt-href]: https://nuxt.com
