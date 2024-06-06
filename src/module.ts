@@ -17,7 +17,7 @@ import {
   joinURL,
 } from "ufo";
 import { name, version, configKey, compatibility } from "../package.json";
-import { scanFolder } from "./helplers";
+import { scanFolder } from "./helpers";
 import { createTemplateNuxtPlugin, createTemplateType } from "./templates";
 
 export interface ModuleOptions {
