@@ -58,7 +58,7 @@
     "@types/node": "^20.14.2",
     "@types/pluralize": "^0.0.33",
     "changelogen": "^0.5.5",
-    "eslint": "^9.4.0",
+    "eslint": "^8",
     "nuxt": "^3.11.2",
     "vitest": "^1.6.0"
   }
